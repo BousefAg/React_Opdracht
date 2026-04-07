@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #F9DBBA;
+}
+
+:root {
+    --text-kleur: black;
+    --achtergrond-kleur: white;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+    /* font is 10px */
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top10{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    gap: 5rem;
+    font-size: 2.5rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: center;
+    max-width: 30%;
+    gap: 3rem;
+}
+
+.item{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.boxes_text{
+    color: #1F316F;
+}

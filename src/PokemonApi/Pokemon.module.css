@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #F9DBBA;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+    /* font is 10px */
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.name{
+    color: #1F316F;
+    text-transform: capitalize;
+}
+
+.PokeContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    gap: 5rem;
+    font-size: 2.5rem;
+    color: #1A4870;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    max-width: 30%;
+    gap: 3rem;
+}
+
+.type {
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: white;
+    margin-right: 6px;
+    font-size: 0.9em;
+}
+
+.moves {
+    list-style: none;
+    padding: 0;
+}
+
+.stab {
+    background-color: gold;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+.searchBar{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.4rem;
+    font-size: 1.5rem;
+    border: 2px solid #1F316F;
+    border-radius: 1rem;
+    background-color: #fff;
+    color: #1F316F;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.searchBar:focus,
+.searchBar:hover {
+    border-color: #15306d;
+    box-shadow: 0 0 0 4px rgba(31, 49, 111, 0.12);
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.searchBar[type="number"] {
+    width: 100%;
+    max-width: 30rem;
+}
+
+.searchBar[type="button"],
+.searchBar[type="submit"],
+.searchBar button,
+.searchBar:hover {
+    cursor: pointer;
+}
+
+.searchBar + .searchBar {
+    margin-left: 1rem;
+}
+
+@media (max-width: 720px) {
+    .searchBar {
+        width: 100%;
+        max-width: 100%;
+    }
+}

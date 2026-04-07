@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --text-kleur: black;
+    --achtergrond-kleur: white;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+html {
+    font-size: 62.5%;
+    /* font is 10px */
+    scroll-behavior: smooth;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border: #1F316F solid 0.7rem;
+    border-radius: 1rem;
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    gap: 5rem;
+    font-size: 2.5rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    max-width: 30%;
+    gap: 3rem;
+}
+.aboutMe__title{
+    color: #1F316F;
+}
+.aboutMe__paragraph{
+    color: #1A4870;
+}
+.imageContainer{
+    max-width: 40rem;
+}
